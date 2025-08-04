@@ -3,10 +3,10 @@
   <head>
     <title>MindAR Centriole</title>
 
-    <!-- A-Frame -->
+    <!-- A-Frame (3D framework) -->
     <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
 
-    <!-- MindAR plugin for A-Frame -->
+    <!-- MindAR plugin for A-Frame (fixed: using unpkg CDN instead of jsDelivr) -->
     <script src="https://unpkg.com/mind-ar/dist/aframe/mindar-image-aframe.prod.js"></script>
 
     <style>
@@ -16,6 +16,7 @@
   </head>
 
   <body>
+    <!-- Scene -->
     <a-scene mindar-image="imageTargetSrc: ./Target/targets.mind;" 
              color-space="sRGB" embedded
              device-orientation-permission-ui="enabled: false">
